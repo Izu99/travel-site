@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body {
+    background-color: rgb(19, 19, 19)!important;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    padding: 1em 12%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36, 35, 35);
+    z-index: 999;
+
+}
+
+.navbar .logo {
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    display: flex;
+}
+
+.navbar .logo:hover {
+    opacity: 1;
+}
+
+.navbar .logo .logo-img img {
+    width: 75px;
+    height: 75px;
+}
+
+.navbar .logo p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 3em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.navbar ul li {
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.bx-menu {
+    font-size: 3em;
+    display: none!important;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.info-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.info-box h1 {
+    font-size: 5em;
+    line-height: 1;
+}
+
+.info-box h3 {
+    font-size: 2em;
+}
+
+.gradient-txt {
+    background: linear-gradient(270deg, #2fffdc 10%, #87ff38 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.btn-box {
+    display: flex;
+    gap: 1em;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    font-size: 1.2em;
+    background-color: white;
+    border: 2p xsolid transparent;
+    color: black;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    border: 2px solid white;
+}
+
+.bento-grid {
+    flex: 1;
+    height: 550px;
+    display: flex;
+    gap: 1em;
+}
+
+.col-left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.col-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.box {
+   flex: 1;
+    border-radius: 1em;
+    display: flex;
+    gap: 1em;
+    transition: 0.2s ease-in-out;
+
+}
+
+.inner-box {
+    flex: 1;
+    border-radius: 1em;
+    overflow: hidden;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.col-left .inner-box:nth-of-type(1) {
+    flex: 2;
+}
+
+.col-left .box:nth-child(2) .inner-box:nth-of-type(2) {
+    flex: 3;
+}
+
+.col-left .box:nth-of-type(3) .inner-box {
+    flex: 1;
+}
+
+.inner-box:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.col-right .box:hover {
+    transform: scale(1.0);
+    opacity: 1;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.col-right .box {
+    overflow: hidden;
+}
+
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    margin-top: -200px;
+}
+
+.discover .top {
+    text-align: center;
+}
+
+.discover .top h1 {
+    margin-top: 20px;
+    font-size: 4vw;
+    color: #2fff7f;
+}
+/* Container for all cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to new rows */
+    justify-content: space-between; /* Even spacing between cards */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+/* Individual card styling */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    flex: 1 1 calc(33.333% - 20px); /* Three cards per row with a gap */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.card img {
+    width: 400px;
+    height: 260px; /* Maintain aspect ratio */
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.card p {
+    padding: 0 10px 20px;
+    color: #666;
+}
+.card button {
+    margin: 15px 12px;
+    padding: 10px 25px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 80%; /* Adjust based on layout */
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+.reviews h1 {
+    font-size: 3.2em;
+    color: #2fff7f;
+    padding: 10px;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 90%; /* Adjust as needed to fit five cards */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 10px; /* Space between cards */
+}
+
+.card-review {
+    flex: 0 0 15%; /* Shows five cards at a time with small spacing */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    background-color: #2423235b;
+    border-radius: 8px;
+}
+
+.card-review .img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+/* Footer Styles */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 5em;
+}
+
+.footer h2 {
+    color: #2fff7f;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.footer-section {
+    margin: 10px 0;
+}
+
+.footer .about p,
+.footer .contact p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer .aboutus {
+    width: 40%;
+}
+
+.footer .links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .links ul li {
+    margin: 5px 0;
+}
+
+.footer .links ul li a {
+    color: #2fff7f;
+    text-decoration: none;
+}
+
+.footer .links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .contact p {
+    margin: 5px 0;
+}
+
+.footer .socials {
+    margin-top: 10px;
+}
+
+.footer .socials a {
+    font-size: 1.2em;
+    color: #2fff7f;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.footer .socials a:hover {
+    color: #00cc66;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #ccc;
+    text-align: center;
+}
+
+
+/* For screens 600px or less */
+@media (max-width: 600px) {
+    .card-review {
+        flex: 1 0 100%; /* Show 1 card per view */
+    }
+    .card {
+        max-width: 100%;
+    }
+}
+
+/* For screens between 601px and 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    .card-review {
+        flex: 1 0 50%; /* Show 2 cards per view */
+    }
+    .card {
+        max-width: 80%;
+    }
+}
+
+/* For screens between 901px and 1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .card-review {
+        flex: 1 0 33.33%; /* Show 3 cards per view */
+    }
+}
+
+/* For screens 1200px and above */
+@media (min-width: 1201px) {
+    .card-review {
+        flex: 1 0 33.33%; /* Show 3 cards per view */
+    }
+}
+
+/* Menu and layout adjustments for screens 1200px or less */
+@media (max-width: 1200px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background-color: #0a0a0adc;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+    .menu li {
+        margin: -5px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    section {
+        flex-direction: column;
+        margin: 1em 2em;
+        padding: 10% 5%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block !important;
+        font-size: 2em;
+    }
+}

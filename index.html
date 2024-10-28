@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="" class="logo-img">
+                <img src="logo.png" alt="Sri Lanka Logo">
+            </a>
+            <p>Sri Lanka</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Attractions</a></li>
+            <li><a href="gallery-image.html">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class='bx bx-menu'></i>
+        </div>
+    </div>
+
+    <section>
+        <div class="info-box">
+            <h1><span class="gradient-txt">Sri Lanka</span></h1>
+            <h3><span class="gradient-txt">Where Beauty Meets Wonder</span></h3>
+            <p>Immerse yourself in a land of breathtaking landscapes, vibrant culture, and timeless traditions. Discover
+                Sri Lanka's untamed beauty, from lush rainforests to golden coastlines and beyond.</p>
+            <div class="btn-box">
+                <button class="btn">Explore</button>
+                <button class="btn">Contact</button>
+            </div>
+        </div>
+       <div class="bento-grid">
+            <div class="col-left">
+                <div class="box">
+                    <div class="inner-box"><img src="image(1).jpg" alt=""></div>
+                    <div class="inner-box"><img src="image(2).jpg" alt=""></div>
+                </div>
+                <div class="box">
+                    <div class="inner-box"><img src="image(3).jpg" alt=""></div>
+                    <div class="inner-box"><img src="image(4).jpg" alt=""></div>
+                </div>
+                <div class="box">
+                    <div class="inner-box"><img src="image(5).jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="box"><video src="video(1).mp4" autoplay muted loop></video></div> 
+                <div class="box"><video src="video(2).mp4" autoplay muted loop></video></div>
+            </div>
+        </div>
+    </section>
+    <section class="discover">
+        <div class="top">
+            <h1>Discover Sri Lanka</h1>
+        </div>
+        <section class="card-container">
+            <div class="card">
+                <img src="sigiriya.jpg" alt="Sigiriya Rock Fortress">
+                <h3>Sigiriya Rock Fortress</h3>
+                <p>A UNESCO World Heritage Site with breathtaking views and rich history.</p>
+                <button class="card-button">more details</button>
+            </div>
+            <div class="card">
+                <img src="daladamaligawa.jpg" alt="Kandy">
+                <h3>Kandy</h3>
+                <p>The cultural capital, home to the Temple of the Tooth Relic in Kandy. </p>
+                <button class="card-button">more details</button>
+            </div>
+            <div class="card">
+                <img src="galle.jpg" alt="Galle Fort">
+                <h3>Galle Fort</h3>
+                <p>A historic coastal town with colonial architecture and beautiful beaches.</p>
+                <button class="card-button">more details</button>
+            </div>
+            <div class="card">
+                <img src="ella.jpg" alt="Ella">
+                <h3>Ella</h3>
+                <p>Known for its stunning tea plantations and scenic hiking trails.</p>
+                <button class="card-button">more details</button>
+            </div>
+            <div class="card">
+                <img src="yala.jpg" alt="Yala National Park">
+                <h3>Yala National Park</h3>
+                <p>A wildlife haven, home to leopards, elephants, and other wildlife.</p>
+                <button class="card-button">more details</button>
+            </div>
+            <div class="card">
+                <img src="mirissa.jpg" alt="Mirissa">
+                <h3>Mirissa</h3>
+                <p>A beach paradise, famous for whale watching and serene coastal views.</p>
+                <button class="card-button">more details</button>
+            </div>
+        </section>
+    </section>
+    <div class="reviews">
+        <h1>Testimonials</h1>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="card-review">
+                    <div class="img"><img src="profile(1).jpg" alt=""></div>
+                    <h3>John Anderson</h3>
+                    <p>"Sri Lanka was a paradise! From the serene beaches of Mirissa to the lush tea plantations in Ella, every place felt magical. Can't wait to return!"</p>
+                </div>
+                <div class="card-review">
+                    <div class="img"><img src="profile(2).jpg" alt=""></div>
+                    <h3>Emma Clarke</h3>
+                    <p>"Climbing Sigiriya Rock and overlooking the breathtaking views was unforgettable. The friendly locals and delicious food made it even better!"</p>
+                </div>
+                <div class="card-review">
+                    <div class="img"><img src="profile(3).jpg" alt=""></div>
+                    <h3>Liam Turner</h3>
+                    <p>"Sri Lanka's mix of stunning beaches, rich history, and beautiful wildlife is unmatched. Visiting Yala National Park was a dream come true!"</p>
+                </div>
+                <div class="card-review">
+                    <div class="img"><img src="profile(7).jpg" alt=""></div>
+                    <h3>Sophia Williams</h3>
+                    <p>"I fell in love with the culture in Kandy and the peaceful temples. It’s a place full of beauty, warmth, and adventure. Highly recommend!"</p>
+                </div>
+                <div class="card-review">
+                    <div class="img"><img src="profile(5).jpg" alt=""></div>
+                    <h3>James Brown</h3>
+                    <p>"Exploring the ancient city of Anuradhapura felt like stepping back in time. Sri Lanka is full of hidden treasures and amazing sights!"</p>
+                </div>
+                <div class="card-review">
+                    <div class="img"><img src="profile(9).jpg" alt=""></div>
+                    <h3>Mia Chen</h3>
+                    <p>"From Colombo’s vibrant city life to the peaceful shores of Trincomalee, Sri Lanka has everything a traveler could ask for. Such a warm, welcoming place!"</p>
+                </div>
+                <div class="card-review">
+                    <div class="img"><img src="profile(4).jpg" alt=""></div>
+                    <h3>Ethan Johnson</h3>
+                    <p>"The hospitality in Sri Lanka is unmatched. Enjoyed every moment, from surfing in Arugam Bay to hiking the lush hills in Nuwara Eliya!"</p>
+                </div>
+                <div class="card-review">
+                    <div class="img"><img src="profile(8).jpg" alt=""></div>
+                    <h3>Olivia Martinez</h3>
+                    <p>"I’ll never forget the sunsets over the Indian Ocean. Sri Lanka has a way of leaving an imprint on your heart. A must-visit destination!"</p>
+                </div>
+                <div class="card-review">
+                    <div class="img"><img src="profile(6).jpg" alt=""></div>
+                    <h3>William Davis</h3>
+                    <p>"If you love adventure and beauty, Sri Lanka is the place to be. Trekking through Horton Plains was absolutely incredible!"</p>
+                </div>
+                <div class="card-review">
+                    <div class="img"><img src="profile(10).jpg" alt=""></div>
+                    <h3>Sophie Patel</h3>
+                    <p>"A truly beautiful place with vibrant culture, amazing food, and friendly people. Sri Lanka exceeded all my expectations!"</p>
+                </div>
+                <!-- Add more cards here if needed -->
+            </div>
+        </div>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>    
+
+  <!-- Footer HTML -->
+<footer class="footer">
+    <div class="footer-content">      
+        <div class="footer-section links">
+            <h2>Popular Destinations</h2>
+            <ul>
+                <li><a href="#">Sigiriya Rock</a></li>
+                <li><a href="#">Ella Train Journey</a></li>
+                <li><a href="#">Temple of the Tooth</a></li>
+                <li><a href="#">Yala National Park</a></li>
+                <li><a href="#">Unawatuna Beach</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section aboutus">
+            <h2>About Us</h2>
+           <p>  Explore the enchanting beauty and rich culture of Sri Lanka. From breathtaking landscapes to historical sites, your adventure begins here.</p>
+        </div>
+
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-envelope"></i> info@srilankawonders.com</p>
+            <p><i class="fas fa-phone"></i> +94 11 2345678</p>
+            <div class="socials">
+                <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Sri Lanka Wonders | All rights reserved.
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
