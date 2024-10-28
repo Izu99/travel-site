@@ -8,9 +8,19 @@
 }
 
 body {
-    background-color: rgb(19, 19, 19)!important;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    height: auto;
+    background-color: rgb(19, 19, 19) !important;
     color: white;
 }
+
+
 
 .navbar {
     width: 100%;
@@ -70,65 +80,22 @@ body {
 
 .bx-menu {
     font-size: 3em;
-    display: none!important;
+    display: none !important;
 }
 
-section {
-    min-height: 100vh;
-    padding: 10% 12%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3em;
-}
 
-.info-box {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.info-box h1 {
-    font-size: 5em;
-    line-height: 1;
-}
-
-.info-box h3 {
-    font-size: 2em;
-}
-
-.gradient-txt {
+h1 {
     background: linear-gradient(270deg, #2fffdc 10%, #87ff38 100%);
     background-clip: text;
     color: transparent;
-}
-
-.btn-box {
-    display: flex;
-    gap: 1em;
-}
-
-.btn {
-    padding: 0.5em 1em;
-    border-radius: 1em;
-    font-size: 1.2em;
-    background-color: white;
-    border: 2p xsolid transparent;
-    color: black;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: rgb(19, 19, 19);
-    color: white;
-    border: 2px solid white;
+    font-size: 4em;
+    margin: 2.2em 0 1em;
 }
 
 .bento-grid {
     flex: 1;
-    height: 550px;
+    width: 80vw;
+    height: auto;
     display: flex;
     gap: 1em;
 }
@@ -148,7 +115,7 @@ section {
 }
 
 .box {
-   flex: 1;
+    flex: 1;
     border-radius: 1em;
     display: flex;
     gap: 1em;
@@ -182,7 +149,7 @@ section {
 }
 
 .col-right .box:hover {
-    transform: scale(1.0);
+    transform: scale(1.01);
     opacity: 1;
 }
 
@@ -190,6 +157,7 @@ video {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 1em;
 }
 
 img {
@@ -202,126 +170,6 @@ img {
     overflow: hidden;
 }
 
-
-.discover {
-    display: flex;
-    flex-direction: column;
-    margin-top: -200px;
-}
-
-.discover .top {
-    text-align: center;
-}
-
-.discover .top h1 {
-    margin-top: 20px;
-    font-size: 4vw;
-    color: #2fff7f;
-}
-/* Container for all cards */
-.card-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to new rows */
-    justify-content: space-between; /* Even spacing between cards */
-    gap: 20px; /* Space between cards */
-    padding: 20px;
-}
-
-/* Individual card styling */
-.card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.2s ease-in-out;
-    flex: 1 1 calc(33.333% - 20px); /* Three cards per row with a gap */
-}
-
-.card:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-}
-
-.card img {
-    width: 400px;
-    height: 260px; /* Maintain aspect ratio */
-}
-
-.card h3 {
-    margin: 15px 0 10px;
-    color: #333;
-}
-
-.card p {
-    padding: 0 10px 20px;
-    color: #666;
-}
-.card button {
-    margin: 15px 12px;
-    padding: 10px 25px;
-    color: white;
-    background-color: black;
-    border: none;
-}
-
-.reviews {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    max-width: 80%; /* Adjust based on layout */
-    margin: auto;
-    overflow: hidden;
-    align-items: center;
-}
-
-.reviews h1 {
-    font-size: 3.2em;
-    color: #2fff7f;
-    padding: 10px;
-}
-
-.slider-wrapper {
-    overflow: hidden;
-    width: 90%; /* Adjust as needed to fit five cards */
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.5s ease;
-    gap: 10px; /* Space between cards */
-}
-
-.card-review {
-    flex: 0 0 15%; /* Shows five cards at a time with small spacing */
-    box-sizing: border-box;
-    text-align: center;
-    padding: 20px;
-    background-color: #2423235b;
-    border-radius: 8px;
-}
-
-.card-review .img img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.prev { left: 0; }
-.next { right: 0; }
 
 /* Footer Styles */
 .footer {
@@ -408,18 +256,13 @@ img {
     .card-review {
         flex: 1 0 100%; /* Show 1 card per view */
     }
-    .card {
-        max-width: 100%;
-    }
+   
 }
 
 /* For screens between 601px and 900px */
 @media (min-width: 601px) and (max-width: 900px) {
     .card-review {
         flex: 1 0 50%; /* Show 2 cards per view */
-    }
-    .card {
-        max-width: 80%;
     }
 }
 
@@ -457,7 +300,11 @@ img {
     }
 
     .menu-icon {
-        display: block;
+        display: block!important;
+    }
+
+    .bx-menu {
+        display: block!important;
     }
 
     .menu.active {
@@ -474,8 +321,11 @@ img {
         display: none;
     }
 
-    .menu-icon {
-        display: block !important;
-        font-size: 2em;
+    .card {
+        width: 30vw;
+        height: auto;
+        flex: 1 1 calc(50% - 20px); /* Two cards per row with a gap */
     }
+    
 }
+

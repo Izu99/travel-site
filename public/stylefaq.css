@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body {
+    background-color: #131313 !important;
+    color: white;
+}
+
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    padding: 1em 12%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36, 35, 35);
+    z-index: 999;
+
+}
+
+.navbar .logo {
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    display: flex;
+}
+
+.navbar .logo:hover {
+    opacity: 1;
+}
+
+.navbar .logo .logo-img img {
+    width: 75px;
+    height: 75px;
+}
+
+.navbar .logo p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 3em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.navbar ul li {
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.bx-menu {
+    font-size: 3em;
+    display: none !important;
+}
+
+/* FAQ Section Styling */
+#faq {
+    padding: 40px;
+    margin-top: 6em;
+}
+
+#faq h2 {
+    text-align: center;
+    color: #24b95d;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.faq-item h3 {
+    color: #2fff7f;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.faq-item p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #dad9d5;
+    font-weight: 450;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 5em;
+}
+
+.footer h2 {
+    color: #2fff7f;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.footer-section {
+    margin: 10px 0;
+}
+
+.footer .about p,
+.footer .contact p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.footer .aboutus {
+    width: 40%;
+}
+
+.footer .links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .links ul li {
+    margin: 5px 0;
+}
+
+.footer .links ul li a {
+    color: #2fff7f;
+    text-decoration: none;
+}
+
+.footer .links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .contact p {
+    margin: 5px 0;
+}
+
+.footer .socials {
+    margin-top: 10px;
+}
+
+.footer .socials a {
+    font-size: 1.2em;
+    color: #2fff7f;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.footer .socials a:hover {
+    color: #00cc66;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #ccc;
+    text-align: center;
+}
+
+
+/* For screens 600px or less */
+@media (max-width: 600px) {
+    .card-review {
+        flex: 1 0 100%;
+        /* Show 1 card per view */
+    }
+
+    .card {
+        width: 6vw !important;
+        height: auto;
+        flex: 1 1 calc(100% - 20px) !important;
+        /* Two cards per row with a gap */
+    }
+
+    .card img {
+        width: 100%;
+        height: 60vh;
+    }
+
+}
+
+/* For screens between 601px and 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+    .card-review {
+        flex: 1 0 50%;
+        /* Show 2 cards per view */
+    }
+
+    .card {
+        width: 6vw !important;
+        height: auto;
+        flex: 1 1 calc(100% - 20px) !important;
+        /* Two cards per row with a gap */
+    }
+
+    .card img {
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+/* For screens between 901px and 1200px */
+@media (min-width: 901px) and (max-width: 1200px) {
+    .card-review {
+        flex: 1 0 33.33%;
+        /* Show 3 cards per view */
+    }
+
+    .card {
+        width: 30vw;
+        height: auto;
+        flex: 1 1 calc(50% - 20px);
+        /* Two cards per row with a gap */
+    }
+
+    .card img {
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+/* For screens 1200px and above */
+@media (min-width: 1201px) {
+    .card-review {
+        flex: 1 0 33.33%;
+        /* Show 3 cards per view */
+    }
+}
+
+/* Menu and layout adjustments for screens 1200px or less */
+@media (max-width: 1200px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background-color: #0a0a0adc;
+        width: 100%;
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+    .menu li {
+        margin: -5px 0;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block !important;
+    }
+
+    .bx-menu {
+        display: block !important;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .card {
+        width: 30vw;
+        height: auto;
+        flex: 1 1 calc(50% - 20px);
+        /* Two cards per row with a gap */
+    }
+
+    .card img {
+        width: 100%;
+        height: 60vh;
+    }
+
+}
